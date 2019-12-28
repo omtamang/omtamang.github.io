@@ -1,0 +1,33 @@
+
+body {
+    background-color: paleturquoise;
+    /* background-image: url('images/bj_background.jpg'); */
+}
+
+.game-parts {
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    /* background-color: rgb(236, 20, 128); */
+}
+
+h1 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+
+#text-area {
+    margin-top: 60px;
+}
+
+.java-scripts {
+    /* background-color: blueviolet; */
+    padding-left: 35%;
+}
+
+.image {
+    margin-top: 10px;
+    /* background-color: yellow; */
+}
