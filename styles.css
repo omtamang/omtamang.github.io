@@ -1,14 +1,14 @@
 
 body {
     background-color: paleturquoise;
-    /* background-image: url('images/bj_background.jpg'); */
 }
 
 .game-parts {
     text-align: center;
     margin-right: 25%;
     margin-left: 25%;
-    /* background-color: rgb(236, 20, 128); */
+    padding-bottom: 15px;
+    font-size: 30px;
 }
 
 h1 {
@@ -23,11 +23,32 @@ h5 {
 }
 
 .java-scripts {
-    /* background-color: blueviolet; */
-    padding-left: 35%;
+    padding-left: 50%;
 }
-
-.image {
+#new-game-button {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#hit-button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#stay-button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#quit-button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* .image {
     margin-top: 10px;
-    /* background-color: yellow; */
-}
+} */
