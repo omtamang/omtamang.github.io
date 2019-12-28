@@ -248,8 +248,8 @@ function displayWin() {
 }
 
 function displayWinScore() {
-  textArea.innerText = 'Game summary: ' + '\nDealer Won: ' + 
-            dealerWinCount + '\nPlayer Won: ' + playerWinCount;
+  textArea.innerText = 'Game summary' + '\n\nDealer total win: ' + 
+            dealerWinCount + '\nPlayer total win: ' + playerWinCount;
   dealerWinCount = 0; 
   playerWinCount = 0;
 }
