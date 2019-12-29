@@ -38,13 +38,13 @@
     text-align: right;
     position: absolute;
     margin-left: 200px;
-    margin-top: -400px;
+    margin-top: -200px;
     font-size: 20px;
 }
 
 .contact p2 {
     position: absolute;
-    margin-top: -400px;
+    margin-top: -200px;
     margin-right: 200px;
     margin-left: 313px;
     font-size: 20px;    
