@@ -24,6 +24,7 @@ let gameStarted = false,
   playerScore = 0,
   dealerWinCount = 0,
   playerWinCount = 0,
+  playerMoney = 500,
   deck = [];
   
   
@@ -39,6 +40,7 @@ newGameButton.addEventListener('click', function () {
   playerWon = false;
   quit = false;
 
+  playerMoney -= 20;
   deck = createDeck();
   shuffleDeck(deck);
   dealerCards = [getNextCard()];
@@ -206,8 +208,8 @@ function showStatus() {
     dealerCardString +
     '=> Score: ' + dealerScore + '\n\n' +
 
-    'Win Count: ' + '\nDealer: ' + dealerWinCount + '  Player: ' + 
-        playerWinCount + 
+    'Win count: ' + ' Dealer: ' + dealerWinCount + '  Player: ' + 
+        playerWinCount + '\nTotal Amount: ' + playerMoney + 
 
     '\n\nPlayer has:\n' +
     playerCardString +
@@ -216,9 +218,11 @@ function showStatus() {
   if (gameOver) {
     if (playerWon) {
       playerWinCount += 1;
+      playerMoney += 20;
       textArea.innerText += "YOU WIN!";
     }
     else if (dealerScore === playerScore) {
+      playerMoney += 20;
       textArea.innerText += "DRAW";
     }
     else {
@@ -239,8 +243,8 @@ function displayWin() {
     dealerCardString +
     '=> Score: ' + dealerScore + '\n\n' +
 
-    'Win Count: ' + '\nDealer: ' + dealerWinCount + '  Player: ' + 
-        playerWinCount + 
+    'Win count: ' + ' Dealer: ' + dealerWinCount + '  Player: ' + 
+        playerWinCount + '\nTotal Amount: ' + playerMoney + 
 
     '\n\nPlayer has:\n' +
     playerCardString +
@@ -249,7 +253,8 @@ function displayWin() {
 
 function displayWinScore() {
   textArea.innerText = 'Game summary' + '\n\nDealer total win: ' + 
-            dealerWinCount + '\nPlayer total win: ' + playerWinCount;
+            dealerWinCount + '\nPlayer total win: ' + playerWinCount + 
+            '\nTotal Amount : ' + playerMoney;
   dealerWinCount = 0; 
   playerWinCount = 0;
 }
