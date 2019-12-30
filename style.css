@@ -1,4 +1,8 @@
 
+
+.div background {
+    background-color: lightblue;
+}
 .navigation-bar {
     width: 35%; 
     height: 80px; 
@@ -24,10 +28,10 @@
 .image {
     overflow: visible;
     width: 350px;
-    height: 500px;
+    height: 450px;
     margin-left: 60%;
     margin-right: 5%;
-    margin-top: -20%;
+    /* margin-top: -10%; */
 }
 .hello {
     margin-top: 90px;
@@ -38,17 +42,18 @@
     text-align: right;
     position: absolute;
     margin-left: 200px;
-    margin-top: -200px;
+    margin-top: -300px;
     font-size: 20px;
 }
 
 .contact p2 {
     position: absolute;
-    margin-top: -200px;
+    margin-top: -300px;
     margin-right: 200px;
     margin-left: 313px;
     font-size: 20px;    
     text-decoration: none;
+    color: black;
 }
 footer {
     background-color: black;
