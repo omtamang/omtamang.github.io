@@ -1,7 +1,7 @@
 
-body {
+/* body {
     background-color: paleturquoise;
-}
+} */
 
 .game-parts {
     text-align: center;
@@ -12,9 +12,6 @@ body {
 }
 
 h1 {
-    text-align: center;
-}
-h5 {
     text-align: center;
 }
 
